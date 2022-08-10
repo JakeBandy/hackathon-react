@@ -30,3 +30,37 @@ div {
 li {
   padding: 40px;
 }
+
+h2.icon-title {
+  color: #000;
+  font-size: 18px;
+  line-height: 1;
+}
+
+input.search {
+  border-radius: 0;
+  border: none;
+  height: 42px;
+  width: 100%;
+  box-shadow: none;
+  padding: 16px 144px 16px 54px;
+  font-weight: 300;
+  background-color: #fff;
+  color: rgba(0,0,0,.75);
+}
+
+div.header {
+  height: 60px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  background: #ff742b;
+  height: auto;
+  padding: 4px;
+  position: relative;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+
