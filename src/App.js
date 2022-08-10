@@ -65,24 +65,31 @@ function App() {
   }, [input]);
 
   return (
-    <div>
-      <h2>List</h2>
-      <input type="text" onChange={handleChange}></input>
-      <button onClick={handleSubmit}>Submit</button>
-      <ul className="list">
+    <>
+      <div className="header">
+        <h2 className="icon-title">Search <br/> Hacker News</h2>
+        <input className="search" type="text" placeholder="Search stories by title, url or author" onChange={handleChange}></input>
+        <button onClick={handleSubmit}>Submit</button>
+      </div>
+
+        <h2>filter dropdown</h2>
+      
+        <div className="results">
+        <ul className="list">
         {list.map((item, index) => (
-          <List
-            key={item.title + index}
-            title={item.title}
-            url={item.url}
-            author={item.author}
-            points={item.points}
-            num_comments={item.num_comments}
-            created_at={item.created_at}
-          />
-        ))}
-      </ul>
-    </div>
-  );
+        <List
+        key={item.title + index}
+        title={item.title}
+        url={item.url}
+        author={item.author}
+        points={item.points}
+        num_comments={item.num_comments}
+        created_at={item.created_at}
+              />
+            ))}
+          </ul>
+          </div>
+        </>
+        );
 }
 export default App;
