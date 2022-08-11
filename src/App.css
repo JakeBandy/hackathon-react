@@ -3,9 +3,6 @@ body, html {
   font-family: Verdana,Geneva,sans-serif;
 }
 
-body {
-  margin: 0;
-}
 * {
   box-sizing: border-box;
 }
@@ -37,6 +34,24 @@ h2.icon-title {
   line-height: 1;
 }
 
+/* div.root {
+  height: 1895px;
+  width: 1197px;
+  background-color: #000;
+  min-height: 937px;
+} */
+
+div.main-container {
+  height: 1895px;
+  width: 1007.44px;
+  margin-bottom: 0px;
+  margin-left: 94.7812px;
+  margin-right: 94.7812px;
+  background-color: #000;
+  color: white;
+  text-decoration-color: #000;
+}
+
 input.search {
   border-radius: 0;
   border: none;
@@ -62,5 +77,8 @@ div.header {
   -ms-flex-pack: justify;
   justify-content: space-between;
 }
+
+
+
 
 
