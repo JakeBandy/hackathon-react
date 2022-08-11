@@ -17,6 +17,8 @@ function App() {
     setList(data.hits);
   }
 
+  
+
   async function inputSearch() {
     const response = await fetch(
       `http://hn.algolia.com/api/v1/search?query=${input}&hitsPerPage=25`
@@ -64,32 +66,48 @@ function App() {
     console.log(input);
   }, [input]);
 
-  return (
-    <>
-      <div className="header">
-        <h2 className="icon-title">Search <br/> Hacker News</h2>
-        <input className="search" type="text" placeholder="Search stories by title, url or author" onChange={handleChange}></input>
-        <button onClick={handleSubmit}>Submit</button>
-      </div>
+  // const searchBar = ({ posts, setSearchResults }) => {
+  //   const handleSubmit = (e) => e.preventDefault()
 
-        <h2>filter dropdown</h2>
-      
-        <div className="results">
-        <ul className="list">
-        {list.map((item, index) => (
-        <List
-        key={item.title + index}
-        title={item.title}
-        url={item.url}
-        author={item.author}
-        points={item.points}
-        num_comments={item.num_comments}
-        created_at={item.created_at}
-              />
+  // const handleChange = (e) => {
+  //   if (!e.target.value) return setSearchResults(posts)
+
+  //   const resultsArray = posts.filter(posts => posts.title.includes(e.target.value) || posts.body.includes(e.target.value))
+  //     setSearchResults(resultsArray)
+  // }
+
+  // }
+
+  return (
+  <>
+    <div className="root">
+      <div className="main-container">
+        <div className="header">
+          <h2 className="icon-title">Search <br/> Hacker News</h2>
+          <input className="search" type="text" id="search" placeholder="Search stories by title, url or author" onChange={handleChange}></input>
+          <button onClick={handleSubmit}>Submit</button>
+        </div>
+
+          <h2>filter dropdown</h2>
+        
+          <div className="results">
+          <ul className="list">
+            {list.map((item, index) => (
+            <List
+              key={item.title + index}
+              title={item.title}
+              url={item.url}
+              author={item.author}
+              points={item.points}
+              num_comments={item.num_comments}
+              created_at={item.created_at}
+            />
             ))}
           </ul>
           </div>
-        </>
+      </div>
+    </div>
+  </>
         );
 }
 export default App;
