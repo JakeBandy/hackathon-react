@@ -10,7 +10,9 @@ export default function Item(props) {
   return (
     <li className="list">
       <h2>{props.title}</h2>
-      <h3>{props.url}</h3>
+      <h3>
+        <a href={props.url}>{props.url}</a>
+      </h3>
       <p>
         Author: {props.author}
         <br></br>Points: {props.points}
