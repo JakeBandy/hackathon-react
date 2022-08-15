@@ -1,12 +1,10 @@
 import React, { useState } from "react";
-
 export default function Item(props) {
   // const [list, setList] = useState("");
   // const handleClick = () => {
   //   console.log("Clicked");
   //   list(!setList);
   // };
-
   return (
     <li className="list">
       <h2>{props.title}</h2>
