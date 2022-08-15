@@ -1,6 +1,7 @@
-body, html {
+body,
+html {
   color: #000;
-  font-family: Verdana,Geneva,sans-serif;
+  font-family: Verdana, Geneva, sans-serif;
 }
 
 * {
@@ -12,15 +13,14 @@ body {
   margin: 8px;
 }
 
-/* main>div {
+main > div {
   min-height: 100vh;
 } */
 
 * {
   box-sizing: border-box;
 }
-user agent stylesheet
-div {
+user agent stylesheet div {
   display: block;
 }
 
@@ -56,7 +56,7 @@ li {
   padding: 16px 144px 16px 54px;
   font-weight: 300;
   background-color: #fff;
-  color: rgba(0,0,0,.75);
+  color: rgba(0, 0, 0, 0.75);
 }
 
 .header {
@@ -92,8 +92,3 @@ li {
   background-color: #000;
   min-height: 937px;
 } 
-
-
-
-
-
