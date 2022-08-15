@@ -12,9 +12,9 @@ body {
   margin: 8px;
 }
 
-main>div {
+/* main>div {
   min-height: 100vh;
-}
+} */
 
 * {
   box-sizing: border-box;
@@ -28,35 +28,30 @@ li {
   padding: 40px;
 }
 
-h2.icon-title {
+.icon-title {
   color: #000;
   font-size: 18px;
   line-height: 1;
 }
 
-/* div.root {
-  height: 1895px;
-  width: 1197px;
-  background-color: #000;
-  min-height: 937px;
-} */
+ 
 
-div.main-container {
-  height: 1895px;
-  width: 1007.44px;
+.main-container {
+  height: 2005px;
+  width: 1607.77px;
   margin-bottom: 0px;
   margin-left: 94.7812px;
   margin-right: 94.7812px;
-  background-color: #000;
-  color: white;
-  text-decoration-color: #000;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  text-decoration-color: rgb(255, 255, 255);
 }
 
-input.search {
+.search {
   border-radius: 0;
   border: none;
   height: 42px;
-  width: 100%;
+  width: 75%;
   box-shadow: none;
   padding: 16px 144px 16px 54px;
   font-weight: 300;
@@ -64,19 +59,39 @@ input.search {
   color: rgba(0,0,0,.75);
 }
 
-div.header {
-  height: 60px;
+.header {
+  height: 63px;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-align: center;
   align-items: center;
   background: #ff742b;
-  height: auto;
+  width: 2000px;
   padding: 4px;
   position: relative;
   -ms-flex-pack: justify;
   justify-content: space-between;
 }
+
+.results {
+  width: 1235.5px;
+  height: 34px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.list {
+  font-size: 12px;
+}
+
+.root {
+  height: 2005px;
+  width: 1903px;
+  background-color: #000;
+  min-height: 937px;
+} 
 
 
 
