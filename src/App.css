@@ -2,6 +2,8 @@ body,
 html {
   color: #000;
   font-family: Verdana, Geneva, sans-serif;
+  height: auto;
+  width: auto;
 }
 
 * {
@@ -24,14 +26,74 @@ user agent stylesheet div {
   display: block;
 }
 
-li {
-  padding: 40px;
+.root {
+  height: 100%;
+  width: 100%;
+  background-color: #000;
+} 
+
+.main-container {
+  height: 2033px;
+  width: 1690px;
+  margin-bottom: 0px;
+  margin-left: 100px;
+  margin-right: 94.7812px;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  text-decoration-color: rgb(255, 255, 255);
+}
+
+.header {
+  height: 64px;
+  width: 1690px;
+  background: #ff742b;
 }
 
 .icon-title {
   color: #000;
+  margin-left: 5%;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1;
+  height: 36px;
+  width: 117.23px;
+}
+
+.search {
+  margin-left: 10%;
+  margin-bottom: 70%;
+  position: sticky;
+  min-width: 1297px;
+  height: 50px;
+  background-color: #fff;
+  color: rgba(0, 0, 0, 0.75);
+} 
+
+.results {
+  display: flex;
+  justify-content: space-between;
+  align-content: space-between;
+}
+
+ .list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 14px;
+  font-weight: 200;
+  width: 1607.55px;
+  height: 157px;
+
+}
+/*
+.icon-title {
+  margin-left: 30px;
+  margin-bottom: 10px;
+  color: #000;
   font-size: 18px;
   line-height: 1;
+  height: 36px;
+  width: 117.23px;
 }
 
  
@@ -47,28 +109,23 @@ li {
   text-decoration-color: rgb(255, 255, 255);
 }
 
-.search {
-  border-radius: 0;
-  border: none;
+ .search {
+  margin-right: 30%;
+  min-width: 1297px;
   height: 42px;
-  width: 75%;
-  box-shadow: none;
-  padding: 16px 144px 16px 54px;
-  font-weight: 300;
   background-color: #fff;
   color: rgba(0, 0, 0, 0.75);
-}
+} 
 
 .header {
-  height: 63px;
+  height: 80px;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-align: center;
   align-items: center;
   background: #ff742b;
-  width: 2000px;
-  padding: 4px;
-  position: relative;
+  width: 1610px;
+  position: sticky;
   -ms-flex-pack: justify;
   justify-content: space-between;
 }
@@ -80,15 +137,11 @@ li {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  justify-content: space-between;
 }
 
 .list {
   font-size: 12px;
-}
+} */
 
-.root {
-  height: 2005px;
-  width: 1903px;
-  background-color: #000;
-  min-height: 937px;
-} 
+

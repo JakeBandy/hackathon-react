@@ -80,6 +80,7 @@ function App() {
             <h2 className="icon-title">
               Search <br /> Hacker News
             </h2>
+            <form className="search-box">
             <input
               className="search"
               type="text"
@@ -87,9 +88,10 @@ function App() {
               placeholder="Search stories by title, url or author"
               onChange={handleChange}
             ></input>
+            </form>
           </div>
 
-          <h2>filter dropdown</h2>
+          {/* <h2>filter dropdown</h2> */}
 
           <div className="results">
             {filteredList.length === 0 ? (
