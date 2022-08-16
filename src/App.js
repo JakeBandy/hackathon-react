@@ -91,8 +91,6 @@ function App() {
             </form>
           </div>
 
-          {/* <h2>filter dropdown</h2> */}
-
           <div className="results">
             {filteredList.length === 0 ? (
               <ul className="list">
