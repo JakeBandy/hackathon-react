@@ -18,7 +18,7 @@ body {
 
 main > div {
   min-height: 100vh;
-} */
+} 
 
 * {
   box-sizing: border-box;
@@ -28,24 +28,13 @@ user agent stylesheet div {
 }
 
 .root {
+  height: 100%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 100vw;
-  width: 100vw;
   background-color: #000;
 } 
-
-.main-container {
-  height: 2033px;
-  width: 1690px;
-  margin-bottom: 0px;
-  margin-left: 100px;
-  margin-right: 94.7812px;
-  background-color: rgb(255, 255, 255);
-  color: rgb(0, 0, 0);
-  text-decoration-color: rgb(255, 255, 255);
-}
 
 .header {
   display: flex;
@@ -55,9 +44,17 @@ user agent stylesheet div {
   background: #ff742b;
 }
 
+.main-container {
+  height: 2033px;
+  width: 1690px;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  text-decoration-color: rgb(255, 255, 255);
+}
+
 .icon-title {
   color: #000;
-  margin-left: 5%;
+  margin-right: 20px;
   font-size: 18px;
   font-weight: 300;
   line-height: 1;
@@ -66,13 +63,15 @@ user agent stylesheet div {
 }
 
 .search {
-  margin-left: 10%;
-  margin-bottom: 70%;
-  position: sticky;
-  min-width: 1297px;
+  display: flex;
+  flex-direction: row;
+  margin-top: 7px;
+  margin-right: 70%;
+  width: 1250px;
   height: 50px;
   background-color: #fff;
   color: rgba(0, 0, 0, 0.75);
+  font-size: 20px;
 } 
 
 .results {
@@ -85,10 +84,48 @@ user agent stylesheet div {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  font-size: 14px;
-  font-weight: 200;
   width: 1607.55px;
   height: 157px;
+
+}
+
+.result-head {
+  display: flex;
+  flex-direction: row;
+}
+
+.result-sub {
+  display: flex;
+  flex-direction: row;
+}
+
+.title {
+  font-size: 14px;
+  text-decoration-color: #000;
+  font-weight: 300;
+  margin-top: 1%;
+}
+
+.res-url {
+  font-size: 13px;
+  margin-left: .5%;
+  font-weight: 300;
+  margin-top: 1%;
+}
+
+/* .search-icon {
+  display: flex;
+  flex-direction: row;
+} */
+
+p {
+  font-size: 10px;
+  text-decoration-color: #696969;
+  font-weight: 200;
+}
+
+a {
+  color: #696969;
 }
 
 

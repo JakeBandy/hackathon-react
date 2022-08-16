@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import List from "./components/list";
 import "./App.css";
 
+import { BsSearch } from "react-icons/bs";
+
 function App() {
   const [list, setList] = useState([]);
   const [input, setInput] = useState("");
@@ -79,7 +81,8 @@ function App() {
             <h2 className="icon-title">
               Search <br /> Hacker News
             </h2>
-            <form className="search-box">
+            <form className="search-box"> 
+            {/* <i className="search-icon"><BsSearch /></i> */}
             <input
               className="search"
               type="text"
