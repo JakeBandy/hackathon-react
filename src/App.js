@@ -75,7 +75,6 @@ function App() {
   return (
     <>
       <div className="root">
-        <div className="main-container">
           <div className="header">
             <h2 className="icon-title">
               Search <br /> Hacker News
@@ -91,6 +90,7 @@ function App() {
             </form>
           </div>
 
+        <div className="main-container">
           <div className="results">
             {filteredList.length === 0 ? (
               <ul className="list">
