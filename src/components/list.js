@@ -7,16 +7,19 @@ export default function Item(props) {
   // };
   return (
     <li className="list">
-      <h2>{props.title}</h2>
-      <h3>
-        <a href={props.url}>{props.url}</a>
-      </h3>
-      <p>
-        Author: {props.author}
-        <br></br>Points: {props.points}
-        <br></br>Comments: {props.num_comments}
-        <br></br>Created at: {props.created_at}
-      </p>
+      <div className="result-head">
+      <h2 className="title">{props.title}</h2>
+      <h3 className="res-url"><a href={props.url}>{props.url}</a></h3>
+      </div>
+      <div className="result-sub">
+        <p>Author: {props.author}</p>
+        <p>|</p>
+        <p>Points: {props.points}</p>
+        <p>|</p>
+        <p>Comments: {props.num_comments}</p>
+        <p>|</p>
+        <p>Created at: {props.created_at}</p>
+      </div>
       {/* <img src={props.image} alt={props.name}></img>
       <button className="button" onClick={(e) => handleClick(e)}>
         {setList ? "Show details" : "Hide Details"}
