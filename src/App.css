@@ -13,7 +13,6 @@ html {
 
 body {
   display: block;
-  margin: 8px;
 }
 
 main > div {
@@ -99,6 +98,10 @@ user agent stylesheet div {
   flex-direction: row;
 }
 
+.result-sub :hover{
+  text-decoration: underline;
+}
+
 .title {
   font-size: 14px;
   text-decoration-color: #000;
@@ -106,11 +109,15 @@ user agent stylesheet div {
   margin-top: 1%;
 }
 
-.res-url {
+ .res-url{
   font-size: 13px;
   margin-left: .5%;
   font-weight: 300;
   margin-top: 1%;
+}
+
+.res-url :hover{
+  text-decoration: underline;
 }
 
 /* .search-icon {
@@ -127,6 +134,7 @@ p {
 a {
   color: #696969;
 }
+
 
 
 
