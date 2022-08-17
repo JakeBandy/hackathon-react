@@ -2,7 +2,9 @@ import React, { useEffect, useState } from "react";
 import List from "./components/list";
 import "./App.css";
 
-import { BsSearch } from "react-icons/bs";
+import SearchIcon from '@mui/icons-material/Search';
+import SettingsIcon from '@mui/icons-material/Settings';
+// import { BsSearch } from "react-icons/bs";
 
 function App() {
   const [list, setList] = useState([]);
@@ -78,11 +80,12 @@ function App() {
     <>
       <div className="root">
           <div className="header">
+            <img src="https://hn.algolia.com/packs/media/images/logo-hn-search-a822432b.png"></img>
             <h2 className="icon-title">
               Search <br /> Hacker News
             </h2>
             <form className="search-box"> 
-            {/* <i className="search-icon"><BsSearch /></i> */}
+            
             <input
               className="search"
               type="text"
@@ -91,6 +94,8 @@ function App() {
               onChange={handleChange}
             ></input>
             </form>
+            <SettingsIcon />
+            Settings
           </div>
 
         <div className="main-container">

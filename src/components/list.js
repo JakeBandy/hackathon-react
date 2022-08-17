@@ -12,13 +12,13 @@ export default function Item(props) {
       <h3 className="res-url"><a href={props.url}>{props.url}</a></h3>
       </div>
       <div className="result-sub">
-        <p>Author: {props.author}</p>
+        <p>{props.points}</p>
         <p>|</p>
-        <p>Points: {props.points}</p>
+        <p>{props.author}</p>
         <p>|</p>
-        <p>Comments: {props.num_comments}</p>
+        <p>{props.created_at}</p>
         <p>|</p>
-        <p>Created at: {props.created_at}</p>
+        <p>{props.num_comments} comments</p>
       </div>
       {/* <img src={props.image} alt={props.name}></img>
       <button className="button" onClick={(e) => handleClick(e)}>
