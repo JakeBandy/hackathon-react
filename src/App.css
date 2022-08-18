@@ -46,8 +46,9 @@ user agent stylesheet div {
 }
 
 .main-container {
-  height: 2033px;
+  height: 100vw;
   width: 1604px;
+  padding-top: 80px;
   background-color: #f6f6ef;
   color: rgb(0, 0, 0);
   text-decoration-color: rgb(255, 255, 255);
@@ -116,6 +117,7 @@ user agent stylesheet div {
   margin-left: 0.5%;
   font-weight: 300;
   margin-top: 1%;
+  text-decoration: none;
 }
 
 .res-url :hover {
@@ -136,6 +138,7 @@ p {
 
 a {
   color: #696969;
+  text-decoration: none;
 }
 
 img {
