@@ -17,7 +17,7 @@ body {
 
 main > div {
   min-height: 100vh;
-} 
+}
 
 * {
   box-sizing: border-box;
@@ -33,20 +33,22 @@ user agent stylesheet div {
   flex-direction: column;
   align-items: center;
   background-color: #000;
-} 
+}
 
 .header {
   display: flex;
   justify-content: center;
-  height: 64px;
-  width: 1690px;
+  height: 60px;
+  width: 1604px;
   background: #ff742b;
+  position: fixed;
+  margin-bottom: 40px;
 }
 
 .main-container {
   height: 2033px;
-  width: 1690px;
-  background-color: rgb(255, 255, 255);
+  width: 1604px;
+  background-color: #f6f6ef;
   color: rgb(0, 0, 0);
   text-decoration-color: rgb(255, 255, 255);
 }
@@ -57,30 +59,30 @@ user agent stylesheet div {
   font-size: 18px;
   font-weight: 300;
   line-height: 1;
-  height: 36px;
-  width: 117.23px;
+  height: 34px;
+  width: auto;
   position: fixed;
-  left: 180px;
+  left: 209px;
 }
 
 .search {
   display: flex;
   flex-direction: row;
-  margin-top: 7px;
+  margin-top: 8px;
   margin-left: 55px;
-  width: 1350px;
-  height: 50px;
+  width: 1280px;
+  height: 46px;
   background-color: #fff;
   color: rgba(0, 0, 0, 0.75);
-  font-size: 20px;
-} 
+  font-size: 18px;
+}
 
 .results {
   display: flex;
   justify-content: space-around;
 }
 
- .list {
+.list {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -98,7 +100,7 @@ user agent stylesheet div {
   flex-direction: row;
 }
 
-.result-sub :hover{
+.result-sub :hover {
   text-decoration: underline;
 }
 
@@ -109,21 +111,22 @@ user agent stylesheet div {
   margin-top: 1%;
 }
 
- .res-url{
+.res-url {
   font-size: 13px;
-  margin-left: .5%;
+  margin-left: 0.5%;
   font-weight: 300;
   margin-top: 1%;
 }
 
-.res-url :hover{
+.res-url :hover {
   text-decoration: underline;
 }
 
- .search-icon {
+.search-icon {
   display: flex;
   flex-direction: row;
-} 
+  position: fixed;
+}
 
 p {
   font-size: 10px;
@@ -140,23 +143,24 @@ img {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin-top: 8px;
+  margin-top: 6px;
   height: 48px;
   width: 48px;
   position: fixed;
-  left: 130px;
+  left: 153px;
 }
 
 .settings {
   display: flex;
   flex-direction: row;
   position: fixed;
-  left: 5px;
+  left: 0px;
+  /* right: 5px; */
+  justify-content: flex-start;
   align-items: center;
   height: 65.906px;
-  width: 19px;
+  width: 10px;
   padding-left: 2%;
-  margin-right: 10px;
   margin-left: 86%;
 }
 
@@ -164,7 +168,7 @@ img {
   height: 24px;
   width: 24px;
   fill: none;
-  margin: 8px;
+  margin: 4px;
 }
 
 h4 {
@@ -174,13 +178,9 @@ h4 {
 
 .SearchIcon {
   position: fixed;
-  top: 21px;
-  left: 330px;
+  top: 18px;
+  left: 350px;
   height: 24px;
   width: 24px;
   color: #ff742b;
 }
-
-
-
-

@@ -9,7 +9,7 @@ export default function Item(props) {
     <li className="list">
       <div className="result-head">
       <h2 className="title">{props.title}</h2>
-      <h3 className="res-url"><a href={props.url}>{props.url}</a></h3>
+      <h3 className="res-url"><a href={props.url}>({props.url})</a></h3>
       </div>
       <div className="result-sub">
         <p>{props.points}</p>
