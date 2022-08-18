@@ -85,17 +85,19 @@ function App() {
               Search <br /> Hacker News
             </h2>
             <form className="search-box"> 
-            
+            <i class="SearchIcon"> <SearchIcon /> </i>
             <input
               className="search"
               type="text"
               id="search"
-              placeholder="Search stories by title, url or author"
+              placeholder="             Search stories by title, url or author"
               onChange={handleChange}
             ></input>
             </form>
-            <SettingsIcon />
-            Settings
+            <span className="settings">
+            <i className="gear-icon"> <SettingsIcon /> </i>
+            <h4>Settings</h4>
+            </span>
           </div>
 
         <div className="main-container">
