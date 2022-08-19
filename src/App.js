@@ -88,7 +88,7 @@ function App() {
               Search <br /> Hacker News
             </h2>
             <form className="search-box"> 
-            <i class="SearchIcon"> 
+            <i className="SearchIcon"> 
             <SearchIcon
             fontSize="large"
             /> </i>
@@ -107,6 +107,7 @@ function App() {
           </div>
 
         <div className="main-container">
+
           <span className="filter-box">
           <FormControl sx={{ m: 0, minWidth: 5 }} size="small"></FormControl>
             Search
@@ -137,10 +138,11 @@ function App() {
 
 
               </span>
+              
           <div className="results">
             {filteredList.length === 0 ? (
               <ul className="list">
-                {list.slice(0,20).map((item, index) => (
+                {list.slice(0,30).map((item, index) => (
                   <List
                     key={item.title + index}
                     title={item.title}
@@ -154,7 +156,7 @@ function App() {
               </ul>
             ) : (
               <ul className="list">
-                {filteredList.slice(0,20).map((item, index) => (
+                {filteredList.slice(0,30).map((item, index) => (
                   <List
                     key={item.title + index}
                     title={item.title}
