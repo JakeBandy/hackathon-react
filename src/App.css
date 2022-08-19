@@ -48,7 +48,8 @@ user agent stylesheet div {
 .main-container {
   height: 100vw;
   width: 1604px;
-  padding-top: 80px;
+  padding-top: 4%;
+=======
   background-color: #f6f6ef;
   color: rgb(0, 0, 0);
   text-decoration-color: rgb(255, 255, 255);
@@ -80,15 +81,14 @@ user agent stylesheet div {
 
 .results {
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
 }
 
 .list {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   width: 1607.55px;
-  height: 60px;
+  height: 2033px;
 }
 
 .result-head {
@@ -157,8 +157,7 @@ img {
   display: flex;
   flex-direction: row;
   position: fixed;
-  left: 0px;
-  /* right: 5px; */
+  right: 258px; 
   justify-content: flex-start;
   align-items: center;
   height: 65.906px;
@@ -186,4 +185,22 @@ h4 {
   height: 24px;
   width: 24px;
   color: #ff742b;
+}
+
+.filter-box {
+  display: flex;
+  flex-direction: row;
+  height: 42px;
+  width: 1607.55px;
+}
+
+.search-all .by .for {
+  font-size: 12px;
+  padding: 30px;
+  font-size: 12px;
+}
+
+.first .second .last {
+  height: 26px;
+  width: 88px;
 }

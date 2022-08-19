@@ -4,6 +4,9 @@ import "./App.css";
 
 import SearchIcon from '@mui/icons-material/Search';
 import SettingsIcon from '@mui/icons-material/Settings';
+
+import { Select } from "@mui/material";
+import FormControl from '@mui/material/FormControl';
 // import { BsSearch } from "react-icons/bs";
 
 function App() {
@@ -104,7 +107,38 @@ function App() {
           </div>
 
         <div className="main-container">
-          Search{} by {} for {}
+
+          <span className="filter-box">
+          <FormControl sx={{ m: 0, minWidth: 5 }} size="small"></FormControl>
+            Search
+            <Select
+                className="first"
+                id="demo-simple-select"
+                value=""
+                placeholder="All"
+                onChange={handleChange}
+                // autoWidth
+              > </Select>
+              by
+              <Select
+                className="second"
+                id="demo-simple-select"
+                value=""
+                placeholder="Date"
+                onChange={handleChange}
+              > </Select>
+              for
+              <Select
+                className="last"
+                id="demo-simple-select"
+                value=""
+                placeholder="All time"
+                onChange={handleChange}
+              > </Select>
+
+
+              </span>
+              
           <div className="results">
             {filteredList.length === 0 ? (
               <ul className="list">
